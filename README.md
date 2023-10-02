@@ -26,8 +26,8 @@ python setup.py develop
 We will release the code and data in the following order, please stay tuned!
 
 - [x] Release core code of StreamingLLM, including Llama-2, MPT, Falcon, and Pythia.
-- [ ] Release perplexity evaluation code
-- [ ] Release Streaming Llama-2 chatbot demo.
+- [x] Release perplexity evn code
+- [x] Release Streaming Llama Chatbot demo.
 - [ ] Release StreamEval dataset and evaluation code.
 
 ## Citation
