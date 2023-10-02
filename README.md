@@ -32,6 +32,25 @@ python setup.py develop
 CUDA_VISIBLE_DEVICES=0 python examples/run_streaming_llama.py  --enable_streaming
 ```
 
+## FAQ
+
+1. **What does "working on infinite-length inputs" imply for LLMs?**
+   
+    Handling infinite-length text with LLMs presents challenges. Notably, storing all previous Key and Value (KV) states demands significant memory, and models might struggle to generate text beyond their training sequence length. StreamingLLM addresses this by retaining only the most recent tokens and attention sinks, discarding intermediate tokens. This enables the model to generate coherent text from recent tokens without a cache reset — a capability not seen in earlier methods.
+
+2. **Is the context window of LLMs expanded?**
+
+    No. The context window remains unchanged. Only the most recent tokens and attention sinks are retained, discarding middle tokens. This means the model can only process the latest tokens. The context window remains constrained by its initial pre-training. For instance, if Llama-2 is pre-trained with a context window of 4096 tokens, then the maximum cache size for StreamingLLM on Llama-2 remains 4096.
+
+3. **Can I input an extensive text, like a book, into StreamingLLM for summarization?**
+
+    While you can input a lengthy text, the model will only recognize the latest tokens. Thus, if a book is input, StreamingLLM might only summarize the concluding paragraphs, which might not be very insightful. As emphasized earlier, we neither expand the LLMs' context window nor enhance their long-term memory. StreamingLLM's strength lies in generating fluent text from recent tokens without needing a cache refresh.
+
+4. **What is the ideal use case for StreamingLLM?**
+
+    StreamingLLM is optimized for streaming applications, such as ongoing dialogues. It's ideal for scenarios where a model needs to operate continually without requiring extensive memory or dependency on past data. An example is a daily assistant based on LLMs. StreamingLLM would let the model function continuously, basing its responses on recent conversations without needing to refresh its cache. Earlier methods would either need a cache reset when conversation length exceeded the training length (losing recent context) or recompute KV states from recent text history, which can be time-consuming.
+
+
 ## TODOs
 We will release the code and data in the following order, please stay tuned!
 
@@ -39,6 +58,7 @@ We will release the code and data in the following order, please stay tuned!
 - [x] Release perplexity evn code
 - [x] Release Streaming Llama Chatbot demo.
 - [ ] Release StreamEval dataset and evaluation code.
+
 
 ## Citation
 
