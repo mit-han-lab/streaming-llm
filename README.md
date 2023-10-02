@@ -22,6 +22,12 @@ pip install transformers accelerate datasets evaluate wandb scikit-learn scipy
 python setup.py develop
 ```
 
+### Run Streaming Llama Chatbot
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python examples/run_streaming_llama.py  --enable_streaming
+```
+
 ## TODOs
 We will release the code and data in the following order, please stay tuned!
 
