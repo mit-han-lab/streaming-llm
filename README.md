@@ -1,4 +1,4 @@
-# Efficient Streaming Language Models with Attention Sinks [[paper](https://arxiv.org/)]
+# Efficient Streaming Language Models with Attention Sinks [[paper](http://arxiv.org/abs/2309.17453)]
 
 ![schemes](figures/schemes.png)
 
@@ -23,6 +23,7 @@ python setup.py develop
 ```
 
 ## TODOs
+We will release the code and data in the following order, please stay tuned!
 
 - [x] Release core code of StreamingLLM, including Llama-2, MPT, Falcon, and Pythia.
 - [ ] Release perplexity evaluation code
