@@ -2,7 +2,8 @@
 
 ![schemes](figures/schemes.png)
 
-https://github.com/mit-han-lab/streaming-llm/assets/40906949/2709cd1e-3ee9-4416-bd61-b8931a5fec1b
+https://github.com/mit-han-lab/streaming-llm/assets/40906949/b040d107-b6f3-449f-bd2e-83c31a995fbc
+
 
 ## TL;DR
 We deploy LLMs for infinite-length inputs without sacrificing efficiency and performance.
