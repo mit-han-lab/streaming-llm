@@ -57,7 +57,7 @@ CUDA_VISIBLE_DEVICES=0 python examples/run_streaming_llama.py  --enable_streamin
 We will release the code and data in the following order, please stay tuned!
 
 - [x] Release core code of StreamingLLM, including Llama-2, MPT, Falcon, and Pythia.
-- [x] Release perplexity evn code
+- [x] Release perplexity evaluation code
 - [x] Release Streaming Llama Chatbot demo.
 - [ ] Release StreamEval dataset and evaluation code.
 
