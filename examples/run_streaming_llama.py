@@ -64,7 +64,7 @@ def streaming_inference(model, tokenizer, prompts, kv_cache=None, max_gen_len=10
         prompt = "USER: " + prompt + "\n\nASSISTANT: "
         print("\n" + prompt, end="")
         input_ids = tokenizer(prompt, return_tensors="pt").input_ids
-        input_ids = input_ids.to("cuda")
+        input_ids = input_ids.to(model.device)
         seq_len = input_ids.shape[1]
         if kv_cache is not None:
             space_needed = seq_len + max_gen_len
