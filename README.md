@@ -1,4 +1,4 @@
-# Efficient Streaming Language Models with Attention Sinks [[paper](http://arxiv.org/abs/2309.17453)]
+# Efficient Streaming Language Models with Attention Sinks [[paper](http://arxiv.org/abs/2309.17453)] [[slides](assets/StreamingLLM.pdf)]
 
 ![schemes](figures/schemes.png)
 
