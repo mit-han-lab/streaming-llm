@@ -10,6 +10,8 @@ We deploy LLMs for infinite-length inputs without sacrificing efficiency and per
 
 ## News
 
+- [2023/12] StreamingLLM enables endless and efficient LLM generation on [iPhone](https://x.com/davidpissarra/status/1735761373261427189?s=20)!
+- [2023/12] StreamingLLM is integrated by HuggingFace Transformers' [main branch](https://github.com/huggingface/transformers/pull/26681).
 - [2023/10] StreamingLLM is integrated into [Intel Extension for Transformers](https://github.com/intel/intel-extension-for-transformers).
 - [2023/10] Check out [Attention Sinks](https://github.com/tomaarsen/attention_sinks), a third-party implementation to enable StreamingLLM on more Huggingface LLMs.
 
