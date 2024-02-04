@@ -10,6 +10,7 @@ We deploy LLMs for infinite-length inputs without sacrificing efficiency and per
 
 ## News
 
+- [2024/01] [SwiftInfer](https://github.com/hpcaitech/SwiftInfer), a TensorRT-based implementation makes StreamingLLM more production-grade.
 - [2024/01] StreamingLLM is integrated into NVIDIA [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM/tree/main/examples/llama#run-llama-with-streamingllm)!
 - [2023/12] StreamingLLM enables endless and efficient LLM generation on [iPhone](https://x.com/davidpissarra/status/1735761373261427189?s=20)!
 - [2023/12] StreamingLLM is integrated by HuggingFace Transformers' [main branch](https://github.com/huggingface/transformers/pull/26681).
