@@ -35,6 +35,16 @@ pip install transformers==4.33.0 accelerate datasets evaluate wandb scikit-learn
 python setup.py develop
 ```
 
+Alternative installation:
+
+```
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python setup.py develop
+```
+
+
 ### Run Streaming Llama Chatbot
 
 ```bash
