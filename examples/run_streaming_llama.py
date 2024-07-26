@@ -9,6 +9,7 @@ import os
 import time
 import re
 import sys
+os.environ['TRANSFORMERS_CACHE'] = "~/.cache/huggingface"  # path to llm cache
 
 from tqdm import tqdm
 from streaming_llm.utils import load, download_url, load_jsonl
