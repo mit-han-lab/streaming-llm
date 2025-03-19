@@ -9,6 +9,14 @@ def enable_streaming_llm(model, start_size, recent_size):
         )
 
         enable_llama_pos_shift_attention(model)
+    elif "phi4mm" in model.config.model_type:
+        print("phi using enable_streaming_llm")
+        k_seq_dim = v_seq_dim = 2
+        from streaming_llm.pos_shift.modify_phi import (
+            enable_phi_pos_shift_attention,
+        )
+
+        enable_phi_pos_shift_attention(model)
     elif "mpt" in model.config.model_type:
         v_seq_dim = 2
         k_seq_dim = 3
