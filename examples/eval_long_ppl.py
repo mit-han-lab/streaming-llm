@@ -25,7 +25,7 @@ if args.enable_start_recent_kv_cache:
     elif "mpt" in model.config.model_type:
         v_seq_dim = 2
         k_seq_dim = 3
-    elif "pythia" in model.config.model_type:
+    elif "gpt_neox" in model.config.model_type or "pythia" in model.config.model_type:
         k_seq_dim = v_seq_dim = 2
     elif "falcon" in model.config.model_type:
         v_seq_dim = 1
